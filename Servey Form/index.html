@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuldeep's Survey</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/30e18f150f.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 id="title">Kuldeep's Servey</h1>
+    <p id="description">Just a survey form to get to know your feedback/ideas etc</p>
+    <form action="" id="survey-form">
+        <div class="input-group">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" name="name" id="name" maxlength="30" placeholder="Enter your name" required>
+        </div>
+        <div class="input-group">
+            <label for="email" id="email-label">Email</label>
+            <input type="email"  name="email" id="email" maxlenght="64" placeholder="Enter your email" required>
+        </div>
+        <div class="input-group">
+            <label for="number" id="number-label">Age</label>
+            <input type="number" min="10" max="99" name="age" id="number" placeholder="Enter your age" required>
+        </div>
+        <div class="input-group">
+            <p style="margin-bottom: 10px;">Topic of Survey</p>
+            <div>
+                <input type="checkbox" id="tech" name="topic" value="tech">
+                <label for="tech">Technical</label>
+            </div>
+            <div>
+                <input type="checkbox" id="soft" name="topic" value="soft">
+                <label for="soft">Soft Skills</label>
+            </div>
+            <div>
+                <input type="checkbox" id="other" name="topic" value="other">
+                <label for="other">Other</label>
+            </div>
+            
+        </div>
+        <div class="input-group">
+            <label for="survey-select">Type of Survey</label>
+            <select name="survey-type" id="dropdown" onchange="surveyChange(this)" required>
+                <option  value="" hidden selected>Select type of Survey</option> 
+                <option value="feedback">Feedback</option>
+                <option value="ideas">Ideas/Project</option>
+            </select>
+        </div>
+        <div class="input-group" id="extra">
+        <div class="input-group">
+            <label for="desc" id="desc-label">Additional Comment(optional)</label>
+            <textarea name="desc" id="desc" rows="5" maxlength="600" placeholder="Anything else you like to tell"></textarea>
+        </div>    
+        </div>
+        <div class="input-group">
+            <p>How would you rate the Survey Page</p>
+            <div style="display: flex; justify-content: space-between;">
+                <div style="display: flex;">
+                    <input type="radio" id="like" name="rate" value="like">
+                    <label for="like" style="font-size: 4rem;"><i class="fas fa-smile-beam" s></i></label>
+                </div>
+                <div style="display: flex;">
+                    <input type="radio" id="neutral" name="rate" value="neutral">
+                    <label for="neutral" style="font-size: 4rem;"><i class="fas fa-meh"></i></label>
+                </div>
+                <div style="display: flex;">
+                    <input type="radio" id="dislike" name="rate" value="dislike">
+                    <label for="dislike"  style="font-size: 4rem;"><i class="fas fa-frown-open"></i></label>
+                </div>
+            </div>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+</html>

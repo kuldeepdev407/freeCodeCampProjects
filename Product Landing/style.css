@@ -1,0 +1,240 @@
+body{
+    margin: 0px auto 0px auto;
+    /* width: max-content; */
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 43pt;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 28pt;
+    margin: auto;
+    margin-bottom: 30px;
+}
+h4{
+    font-size: 20pt;
+    margin-bottom: 0px;
+}
+
+header{
+    display: flex;
+    font-family: 'Raleway';
+    margin: 10px 30px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+#header-img{
+    margin: auto 0px;
+}
+
+#nav-bar{
+    max-width: 20%; 
+    min-width: 50%; 
+    display: flex;
+    margin-left: auto;
+    justify-content: space-between;
+}
+
+.nav-link{
+    text-decoration: none;
+    color:black;
+    margin: auto;
+    padding: auto;
+}
+
+#home{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#features{
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.feature{
+    display: flex;
+    margin: auto;
+
+}
+.feature img{
+    margin-top: auto;
+    width: 400px;
+    height: 250px;
+}
+
+#video-sec{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sec-title{
+    margin-top: 100px;
+}
+
+#pricing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+#products{
+    display: flex;
+    flex-direction: row;
+    width:  80%;
+    justify-content: space-evenly;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: min-content;
+}
+
+.product p{
+    max-width: 170px;
+    flex-wrap: wrap;
+}
+
+button,#submit{
+    width: 200px;
+    margin-top: 30px;    
+    border: none;
+    margin: 30px auto auto auto;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15pt;
+    padding: 5px 20px;
+    color: white;
+    background-color: #023047;
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+#contacts{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+form{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#email{
+    font-size: 13pt;
+    min-width: 50vw;
+    max-width: 50vw;
+    border: none;
+    padding: 5px 5px;
+    background-color:darkgray;
+}
+#description{
+    margin-top: 10px;
+    font-size: 13pt;
+    min-width: 50vw;
+    max-width: 50vw;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    resize: none;
+    padding: 5px 5px;
+    background-color:darkgray;
+}
+
+footer {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin: 20px 20px 10px auto;
+}
+footer div a{
+    text-decoration: none;
+    color: black;
+    font-size: 10pt;
+}
+footer p{
+    margin-top: 0px;
+    font-size: 8pt;
+}
+
+button:hover,#submit:hover{
+    background-color: #024769;
+    cursor: pointer;
+}
+
+@media (max-width:650px) {
+    h1{
+        font-size: 20pt;
+    }
+    h3{
+        font-size: 14pt;
+    }
+    h4{
+      font-size: 13pt;  
+    }
+    p{
+        font-size: 10pt;
+    }
+    #header{
+        margin: 0px;
+    }
+    .nav-link{
+        margin-right: 5px;
+    }
+    body{
+        margin: 0px 5px;
+    }
+
+    #home{
+        flex-direction: column-reverse;
+    }
+    #home div h1{
+        margin: auto;
+        text-align: center;
+    }
+
+    .feature{
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature div{
+        margin-left: 0px;
+        padding: 0px;
+    }
+    .feature img{
+        width: 90vw !important;
+    }
+    #secondFeature{
+        flex-direction: column-reverse;
+    }
+
+    #video{
+        width: 90vw !important;
+    }
+
+    #products{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #email{
+        font-size: 10pt;
+        width: 90vw;
+    }
+    #description{
+        font-size: 10pt;
+        width: 90vw;
+    }
+}
