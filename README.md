@@ -1,7 +1,7 @@
 # freeCodeCampProjects
 This is the my freeCodeCamp.org certification projects
 <br/><br/>
-![freeCodeCamp](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fg4.netlify.app%2Fimages%2Fcustomers%2Ffreecodecamp_logo.png&f=1&nofb=1)
+![freeCodeCamp](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fblog.markallenwebdeveloper.co.uk%2Fwp-content%2Fuploads%2F2018%2F09%2FfreeCodeCamp-1200x200.jpg&f=1&nofb=1)
 <br/>
 
 ## This Repository include
