@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav id="nav-bar">
+        <header>
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pngkit.com%2Fpng%2Ffull%2F101-1010012_download-png.png&f=1&nofb=1"
+                width="100px" alt="" srcset="">
+            <h3>C Programming Language
+                Documentation</h3>
+        </header>
+        <ul>
+            <li>
+                <a class="nav-link" href="#Introduction">Introduction</a>
+            </li>
+            <li>
+                <a href="#GetStarted" class="nav-link">Get Started</a>
+            </li>
+            <li>
+                <a href="#Variable" class="nav-link">Variable</a>
+            </li>
+            <li>
+                <a href="#DataTypes" class="nav-link">Data Types</a>
+            </li>
+            <li>
+                <a href="#Operators" class="nav-link">Operators in C</a>
+            </li>
+            <li>
+                <a href="#ifelse" class="nav-link">if-else in c</a>
+            </li>
+            <li>
+                <a href="#loops" class="nav-link">Loops in C</a>
+            </li>
+            <li>
+                <a href="#function" class="nav-link">Functions in C</a>
+            </li>
+            <li>
+                <a href="#refrence" class="nav-link">Refrence</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <h2>Introduction</h2>
+            <p>C programming is a general-purpose, procedural, imperative computer programming language developed in
+                1972 by Dennis M. Ritchie at the Bell Telephone Laboratories to develop the UNIX operating system. C
+                is the most widely used computer language. It keeps fluctuating at number one scale of popularity
+                along with Java programming language, which is also equally popular and most widely used among
+                modern software programmers.</p>
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.vM7L_KeQMvO9_MlicIL9KgHaE8%26pid%3DApi&f=1"
+                width="300px">
+            <h4>Features</h4>
+            <ol>
+                <li>Simple</li>
+                <li>Machine Independent or Portable</li>
+                <li>Mid-Level programming language</li>
+                <li>Structured programming language</li>
+                <li>Rich Library</li>
+                <li>Memory Management</li>
+                <li>Fast Speed</li>
+                <li>Pointers</li>
+                <li>Extensible</li>
+            </ol>
+        </section>
+        <section id="GetStarted">
+            <h2>Get Started</h2>
+            <article>
+                There are many compilers available for c and c++. You need to download any one. Here, we are going to
+                use Turbo C++. It will work for both C and C++. To install the Turbo C software, you need to follow
+                following steps.
+                <ol>
+                    <li>Download Turbo C++</li>
+                    <li>Create turboc directory inside c drive and extract the tc3.zib inside c:\turboc
+                    </li>
+                    <li>Double click on install.exe file</li>
+                    <li>Click on the tc application file loacted inside c:\TC\BIN to write the c program
+                    </li>
+
+                    <pre>
+                    <code class="language-c">
+                        #include<<x>stdio.h>
+                        int main(){
+                            printf("Hellow World")
+                            return 0;
+                        }
+                    </code>
+                    </pre>
+                    <li>Now it time to compile you can compile by two ways:
+                        <ol>
+                            <li>By clicking on the compile menu then compile sub menu to compile the c program</li>
+                            <li>By pressing <b>ctrl+f9</b> keys compile and run the program directly.</li>
+                        </ol>
+                    </li>
+                    <li>You are able to see output screen displaying
+                    </li>
+                    <pre><code>
+                        Hellow World
+                    </code></pre>
+                </ol>
+                In this basic program we have 4 lines of code lets discuss it:
+                <ul>
+                    <li><code>#include<<x>stdio.h></code>:- includes the standard input output library functions. The
+                        printf() function is defined in stdio.h .</li>
+                    <li><code>int main()</code>:-The main() function is the entry point of every program in c language.
+                    </li>
+                    <li><code>printf("Hellow World");</code>:- It is function defind in stdio.h header file for printing
+                        data on console.</li>
+                    <li><code>return 0;</code>:-The return 0 statement, returns execution status to the OS. The 0 value
+                        is used for successful execution and 1 for unsuccessful execution.
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section id="Variable">
+            <h2>Variable</h2>
+            <article>
+                <p>A variable is a name of the memory location. It is used to store data. Its value can be changed, and
+                    it
+                    can be reused many times.
+                    It is a way to represent memory location through symbol so that it can be easily identified.
+                </p>
+                Let's see the syntax to declare a variable:
+                <pre><code>
+                    int a;
+                    float b;
+                    char c;
+                </code></pre>
+                <h4>C Rules for Defining variable</h4>
+                <ul>
+                    <li>A variable can have alphabets, digits, and underscore.</li>
+                    <li>A variable name can start with the alphabet, and underscore only. It can't start with a digit.
+                    </li>
+                    <li>No whitespace is allowed within the variable name.</li>
+                    <li>A variable name must not be any reserved word or keyword, e.g. int, float, etc.</li>
+                </ul>
+                <b>Valid variable name:</b>
+                <pre><code>
+                     int a;
+                     int _ab;
+                     int a20;
+                 </code></pre>
+                <b>Invalid variable name:</b>
+                <pre><code>
+                    int 2;  
+                    int a b;  
+                    int long;
+                 </code></pre>
+                <b>Types of Variables in C</b>
+                <ol>
+                    <li>local variable</li>
+                    <li>global variable</li>
+                    <li>static variable</li>
+                    <li>automatic variable</li>
+                    <li>external variable</li>
+                </ol>
+            </article>
+        </section>
+        <section id="DataTypes">
+            <h2>Data Types</h2>
+            <article>A data type specifies the type of data that a variable can store such as integer, floating,
+                character, etc.<br>
+                There are the following data types in C language.
+                <ul>
+                    <li><i>Basic Data Type</i> :- int, char, float, double</li>
+                    <li><i>Derived Data Type</i>:- array, pointer, structure, union</li>
+                    <li><i>Enumeration Data Type</i>:- enum</li>
+                    <li><i>Void Data Type</i>:- void</li>
+                </ul>
+                <h4>Basic Data types</h4>
+                <p>
+                    The basic data types are integer-based and floating-point based. C language supports both signed and
+                    unsigned literals.
+                    The memory size of the basic data types may change according to 32 or 64-bit operating system.
+                </p>
+                Let's see the basic data types. Its size is given according to 32-bit architecture.
+                <table>
+                    <tr>
+                        <th>Data Types</th>
+                        <th>Memory Size</th>
+                        <th>Range</th>
+                    </tr>
+                    <tr>
+                        <td>char</td>
+                        <td>1 byte</td>
+                        <td>-128 to 127</td>
+                    </tr>
+                    <tr>
+                        <td>short</td>
+                        <td>2 byte</td>
+                        <td>-32,768 to 32,767</td>
+                    </tr>
+                    <tr>
+                        <td>int</td>
+                        <td>2 byte</td>
+                        <td>-32,768 to 32,767</td>
+                    </tr>
+                    <tr>
+                        <td>unsigned int</td>
+                        <td>2 byte</td>
+                        <td>0 to 65,535</td>
+                    </tr>
+                    <tr>
+                        <td>long int</td>
+                        <td>4 byte</td>
+                        <td>-2,147,483,648 to 2,147,483,647</td>
+                    </tr>
+                    <tr>
+                        <td>unsigned long int</td>
+                        <td>4 byte</td>
+                        <td>0 to 4,294,967,295</td>
+                    </tr>
+                    <tr>
+                        <td>float</td>
+                        <td>4 byte</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>double</td>
+                        <td>8 byte</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>long double</td>
+                        <td>10 byte</td>
+                        <td></td>
+                    </tr>
+                </table>
+
+            </article>
+        </section>
+        <section id="Operators">
+            <h2>Operators</h2>
+            <article>
+                An operator is simply a symbol that is used to perform operations. There can be many types of operations
+                like arithmetic, logical, bitwise, etc. <br><br>
+                There are following types of operators to perform different types of operations in C language.
+
+                <ul>
+                    <li>Arthmetic Operators</li>
+                    <li>Relational Operators</li>
+                    <li>Shift Operators</li>
+                    <li>Logical Operators</li>
+                    <li>BitwiseOperators</li>
+                    <li>Ternary or Conditional Operators</li>
+                    <li>Assignment Operator</li>
+                    <li>Misc Operator</li>
+                </ul>
+                <h4>Precedence of Operators in C</h4>
+                The precedence of operator species that which operator will be evaluated first and next. The
+                associativity specifies the operator direction to be evaluated; it may be left to right or right to
+                left.
+                Let's understand the precedence by the example given below:
+                <table>
+                    <tr>
+                        <th>Category</th>
+                        <th>Operator</th>
+                    </tr>
+                    <tr>
+                        <td>Postfix</td>
+                        <td>() [] -> . ++ --</td>
+                    </tr>
+                    <tr>
+                        <td>Unary</td>
+                        <td>+ - ! ~ ++ -- (type)* & sizeof</td>
+                    </tr>
+                    <tr>
+                        <td>Multiplicative</td>
+                        <td>* / %</td>
+                    </tr>
+                    <tr>
+                        <td>Additive</td>
+                        <td>+ -</td>
+                    </tr>
+                    <tr>
+                        <td>Shift</td>
+                        <td>
+                            <<>>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Relational</td>
+                        <td>
+                            < <=> >=
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Equality</td>
+                        <td>== !=</td>
+                    </tr>
+                    <tr>
+                        <td>Bitwise AND</td>
+                        <td>&</td>
+                    </tr>
+                    <tr>
+                        <td>Bitwise XOR</td>
+                        <td>^</td>
+                    </tr>
+                    <tr>
+                        <td>Bitwise OR</td>
+                        <td>|</td>
+                    </tr>
+                    <tr>
+                        <td>Logical AND</td>
+                        <td>&&</td>
+                    </tr>
+                    <tr>
+                        <td>Conditional</td>
+                        <td>?:</td>
+                    </tr>
+                    <tr>
+                        <td>Assignment</td>
+                        <td>= += -= *= /= %= >>= <<= &= ^= |=</td>
+                    </tr>
+                    <tr>
+                        <td>Comma</td>
+                        <td>,</td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+        <section id="ifelse">
+            <h2>C if else Statement</h2>
+            <article>
+                The if-else statement in C is used to perform the operations based on some specific condition. The operations specified in if block are executed if and only if the given condition is true.
+                <br>There are the following variants of if statement in C language.
+                <ul>
+                    <li>if statement</li>
+                    <li>If-else statement</li>
+                    <li>If else-if ladder</li>
+                    <li>Nested if</li>
+                </ul>
+                <h4>If Statement</h4>
+                <p>
+                    The if statement is used to check some given condition and perform some operations depending upon the correctness of that condition. It is mostly used in the scenario where we need to perform the different operations for the different conditions. The syntax of the if statement is given below.
+                </p>
+                <pre>
+                    <code>
+                        if(expression){  
+                        //code to be executed  
+                        }  
+                    </code>
+                </pre>
+                Let's see a simple example of C language if statement.
+                <pre>
+                    <code>
+                        #include<<x>stdio.h>    
+                        int main(){    
+                        int number=0;    
+                        printf("Enter a number:");    
+                        scanf("%d",&number);    
+                        if(number%2==0){    
+                            printf("%d is even number",number);    
+                        }    
+                        return 0;  
+                        }    
+                    </code>
+                </pre>
+                <h4>Output</h4>
+                <pre><code>
+                    Enter a number:4
+                    4 is even number
+                    enter a number:5
+                </code></pre>
+                <h4>If else statement</h4>
+                The if-else statement is used to perform two operations for a single condition. The if-else statement is an extension to the if statement using which, we can perform two different operations, i.e., one is for the correctness of that condition, and the other is for the incorrectness of the condition. Here, we must notice that if and else block cannot be executed simiulteneously. Using if-else statement is always preferable since it always invokes an otherwise case with every if condition. The syntax of the if-else statement is given below.
+                <pre><code>
+                    if(expression){  
+                    //code to be executed if condition is true  
+                    }else{  
+                    //code to be executed if condition is false  
+                    } 
+                </code></pre>
+                Let's see the simple example to check whether a number is even or odd using if-else statement in C language.
+                <pre><code>
+                    #include<stdio.h>    
+                    int main(){    
+                        int number=0;    
+                        printf("enter a number:");    
+                        scanf("%d",&number);     
+                        if(number%2==0){    
+                            printf("%d is even number",number);    
+                        }    
+                        else{    
+                            printf("%d is odd number",number);    
+                        }     
+                        return 0;  
+                    }   
+                </code></pre>
+                <b>Output</b><br>
+                <pre><code>
+                    enter a number:4
+                    4 is even number
+                    enter a number:5
+                    5 is odd number
+                </code></pre>
+                <h4> else-if ladder</h4>
+                The if-else-if ladder statement is an extension to the if-else statement. It is used in the scenario where there are multiple cases to be performed for different conditions. In if-else-if ladder statement, if a condition is true then the statements defined in the if block will be executed, otherwise if some other condition is true then the statements defined in the else-if block will be executed, at the last if none of the condition is true then the statements defined in the else block will be executed. There are multiple else-if blocks possible. It is similar to the switch case statement where the default is executed instead of else block if none of the cases is matched.
+                <pre><code>
+                    if(condition1){  
+                    //code to be executed if condition1 is true  
+                    }else if(condition2){  
+                    //code to be executed if condition2 is true  
+                    }  
+                    else if(condition3){  
+                    //code to be executed if condition3 is true  
+                    }  
+                    ...  
+                    else{  
+                    //code to be executed if all the conditions are false  
+                    }  
+                </code></pre>
+                The example of an if-else-if statement in C language is given below.
+                <pre><code>
+                    #include<stdio.h>    
+                    int main(){    
+                        int number=0;    
+                        printf("enter a number:");    
+                        scanf("%d",&number);     
+                        if(number==10){    
+                            printf("number is equals to 10");    
+                        }    
+                        else if(number==50){    
+                            printf("number is equal to 50");    
+                        }    
+                        else if(number==100){    
+                            printf("number is equal to 100");    
+                        }    
+                        else{    
+                            printf("number is not equal to 10, 50 or 100");    
+                        }    
+                        return 0;  
+                    }   
+                </code></pre>
+                <b>Output</b>
+                <pre><code>
+                    enter a number:4
+                    number is not equal to 10, 50 or 100
+                    enter a number:50
+                    number is equal to 50
+                </code></pre>
+            </article>
+        </section>
+        <section id="loops">
+            <h2>Loops in C</h2>
+            <article>
+                The looping can be defined as repeating the same process multiple times until a specific condition satisfies. There are three types of loops used in the C language. In this part of the tutorial, we are going to learn all the aspects of C loops.
+                <h4>Types of loops</h4>
+                There are three types of loops in C language that is given below:
+                <ol>
+                    <li>do while</li>
+                    <li>while</li>
+                    <li>for</li>
+                </ol>
+                <h4>do-while loop in c</h4>
+                The do-while loop continues until a given condition satisfies. It is also called post tested loop. It is used when it is necessary to execute the loop at least once (mostly menu driven programs). <br>
+The syntax of do-while loop in c language is given below:
+                <pre><code>
+                    do{
+                        //code to be executed
+                    }while(condition);
+                </code></pre>
+                <h4>while loop in c</h4>
+                The while loop in c is to be used in the scenario where we don't know the number of iterations in advance. The block of statements is executed in the while loop until the condition specified in the while loop is satisfied. It is also called a pre-tested loop. <br> 
+                The syntax of while loop in c language is given below:
+                <pre><code>
+                    while(condition){
+                        //code to be executed
+                    }
+                </code></pre>
+                <h4>for loop in c</h4>
+                The for loop is used in the case where we need to execute some part of the code until the given condition is satisfied. The for loop is also called as a per-tested loop. It is better to use for loop if the number of iteration is known in advance. <br>
+                The syntax of for loop in c language is given below:
+                <pre><code>
+                    for(initializationl;condition;incr/decr){
+                        //code to be executed
+                    }
+                </code></pre>
+            </article>
+        </section>
+        <section id="function">
+            <h2>Function in C</h2>
+            In c, we can divide a large program into the basic building blocks known as function. The function contains the set of programming statements enclosed by {}. A function can be called multiple times to provide reusability and modularity to the C program. In other words, we can say that the collection of functions creates a program. The function is also known as procedureor subroutinein other programming languages.
+            <h2>Function Aspects</h2>
+            There are three aspects of a C function.
+            <ul>
+                <li><b>Function Declaration</b> A function must be declared globally in a c program to tell the compiler about the function name, function parameters, and return type.</li>
+                <li><b>Function call</b> Function can be called from anywhere in the program. The parameter list must not differ in function calling and function declaration. We must pass the same number of functions as it is declared in the function declaration.</li>
+                <li><b>Function definition</b> It contains the actual statements which are to be executed. It is the most important aspect to which the control comes when the function is called. Here, we must notice that only one value can be returned from the function.</li>
+            </ul>
+            <table>
+                <tr>
+                    <th>SN</th>
+                    <th>C fucntion aspects</th>
+                    <th>syntax</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Function declaration</td>
+                    <td>eturn_type function_name(argrument list)</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Function call</td>
+                    <td>funtion_name(argument_list)</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Function definition</td>
+                    <td>return_type function_name(argument list){function body;}</td>
+                </tr>
+            </table>
+        </section>
+        <section id="refrence">
+            <h2>Refrence</h2>
+            <article>
+                <ul>
+                    <li><a href="https://www.wikipedia.org">www.wikipedia.org</a></li>
+                    <li><a href="https://www.javatpoint.com">www.javatpoint.com</a></li>
+                </ul>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
