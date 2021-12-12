@@ -68,16 +68,16 @@ code{
     body div{
         flex-direction: column;
     }
-    #nav-bar ul{
+    #navbar ul{
         height: 200px;
     }
-    #nav-bar{
+    #navbar{
         display: flex;
         flex-direction: column;
         width: 100%;
         position: relative;
     }
-    #nav-bar header{
+    #navbar header{
         text-align: center;
     }
     #main-doc{
