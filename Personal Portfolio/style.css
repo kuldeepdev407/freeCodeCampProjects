@@ -1,0 +1,147 @@
+*{
+    color: #fff;
+    margin: 0px;
+    padding: 0px;
+    font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+}
+body{
+    overflow-x: hidden;
+}
+#navbar{
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    top:0%;
+    position: sticky;
+}
+#navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    margin: 0px 10px;
+    word-wrap: break-word;
+    word-break: keep-all;
+    white-space: nowrap;
+}
+
+#welcome-section{
+    margin: 0px;
+    height: 92.5vh;
+    width: 100vw;
+    text-align: center;
+    background-color: #1d1d1d;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+#identity{
+    display: flex;
+    align-self: center;
+}
+
+#static-text{
+    font-size: 2rem;
+    font-style: italic;
+}
+#dynamic-text{
+    text-align: start;
+    margin-left: 5px;
+    height: 30px;
+    overflow: hidden;
+    color: #ff0000;
+}
+
+#dynamic-text li{
+    list-style-type: none;
+    position: relative;
+    top: 0px;
+    animation: slide 6s steps(3) infinite;
+}
+
+@keyframes slide {
+    100%{
+        top: -87px;
+    }
+}
+#dynamic-text li span{
+    position: relative;   
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#dynamic-text li span::after{
+    content: "";
+    position: absolute;
+    left:0;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid #fff;
+    background: #1d1d1d;
+    animation: typing 2s steps(14) infinite;
+}
+@keyframes typing {
+    40%{
+        left:100%;
+    }
+    60%{
+        left:100%;
+    }
+    100%{
+        left:0%;
+    /* margin: 0px -35px 0px 25px; */
+    }
+}
+
+#hand{
+    font-size: 5rem;
+    transform: rotate(-20deg);
+    transform-origin: 50% 85%;
+    animation: shakehand 1.5s infinite;
+}
+@keyframes shakehand {
+    50%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(-20deg);
+    }
+}
+
+.curve-divider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.curve-divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 123px;
+}
+
+.curve-divider .shape-fill {
+    fill: #1D1D1D;
+}
+#projects{
+    position: relative;
+    background-color: #e04343;
+    text-align: center;
+    padding-top: 150px;
+}
+#projects h2{
+    font-family: Raleway;
+    text-decoration: underline;
+}
