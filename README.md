@@ -9,7 +9,7 @@ This is the my freeCodeCamp.org certification projects
 - [Servey Form](https://github.com/Kuldeep800singh/freeCodeCampProjects/tree/main/Servey%20Form "Servey Form with javascript")
 - [Product Landing Page](https://github.com/Kuldeep800singh/freeCodeCampProjects/tree/main/Product%20Landing "Watch Product Landing Page")
 - [Documentation Page](https://github.com/Kuldeep800singh/freeCodeCampProjects/tree/main/Documentation%20Page "Documentation Page on C")
-- [Personal Portfolio](https://github.com/Kuldeep800singh/freeCodeCampProjects/tree/main/Personal%20Portfolio "My personal portfolio"))
+- [Personal Portfolio](https://github.com/Kuldeep800singh/freeCodeCampProjects/tree/main/Personal%20Portfolio "My personal portfolio")
 <br/></br>
 
 ## Live Links
