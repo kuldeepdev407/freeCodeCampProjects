@@ -170,6 +170,7 @@ h3{
 .project-tile{
     min-width: 500px;
     max-width: 500px;
+    max-height: 400px;
     background-color: #1d1d1d;
     border-radius: 3px;
     box-shadow: 2px 2px 3px #1D1D1D;
@@ -206,6 +207,10 @@ h3:hover .hovertext{
     .project-tile{
         min-width: 300px;
         max-width: 300px;
+    }
+
+    .project-tile img{
+        max-height: 200px;
     }
     
 }
